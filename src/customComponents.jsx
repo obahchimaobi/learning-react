@@ -1,45 +1,19 @@
 import { createRoot } from "react-dom/client";
-import reactLogo from "./assets/react.svg";
 import { Fragment } from "react";
+import Header from "./Header";
+import MainContent from "./MainContent";
+import Footer from "./Footer";
+import "./main.css";
 
 const rootElement = document.getElementById("root");
 
 const root = createRoot(rootElement);
 
-function Header() {
-    return (
-        <header>
-            <img src={reactLogo} alt="react logo" />
-        </header>
-    )
-}
-
-function Main() {
-    return (
-        <main>
-            <h1>Reasons I'm excited to learn react</h1>
-
-            <ol>
-                <li>React is a popular library</li>
-                <li>I can get a high paying frontend job with react</li>
-            </ol>
-        </main>
-    )
-}
-
-function Footer() {
-    return (
-        <footer>
-            0 20xx development. All rights reserved
-        </footer>
-    )
-}
-
 root.render(
 
     <Fragment>
         <Header />
-        <Main />
+        <MainContent />
         <Footer />
     </Fragment>
 )
