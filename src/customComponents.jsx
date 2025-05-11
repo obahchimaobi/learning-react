@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import reactLogo from "./assets/react.svg";
+import { Fragment } from "react";
 
 const rootElement = document.getElementById("root");
 
@@ -35,9 +36,10 @@ function Footer() {
 }
 
 root.render(
-    <>
+
+    <Fragment>
         <Header />
         <Main />
         <Footer />
-    </>
+    </Fragment>
 )
