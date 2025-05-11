@@ -1,6 +1,6 @@
-import reactLogo from "./assets/react.svg";
+import reactLogo from "../assets/react.svg";
 
-export default function Header() {
+export default function Navbar() {
     return (
         <header className="head">
             <div className="head-inside">
