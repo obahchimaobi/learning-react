@@ -6,6 +6,14 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+main {
+    background-image: url(assets/react-logo-half.png);
+    padding: 60px 30px;
+    background-repeat: no-repeat;
+    background-position: right 100%;
+    background-position-y: 65%;
+}
+
 .navList {
     list-style: none;
     display: flex;
@@ -33,4 +41,10 @@ body {
 
 .lists {
     list-style-type: disc;
+}
+
+li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
+    justify-items: center;
 }
